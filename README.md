@@ -20,3 +20,17 @@ sudo sed -i '/swap/s/^/#/' /etc/fstab
 
 sudo swapon --show
 ```
+### Step 2: Change the hostname on your VM's or node
+```bash
+ # ssh into your VMs or just run the command in the terminal of each VM or node
+ # Set the hostname of my 1st Node to k8s-master from the terminal of the node
+ sudo hostnamectl set-hostname "k8s-master"
+
+ # Set the hostname of my 2nd Node to k8s-worker from the terminal of the node
+ sudo hostnamectl set-hostname "k8s-worker"
+
+ #Run the command below should change the hostname on the terminal
+ exec bash
+
+ hostname
+```
