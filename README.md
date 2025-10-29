@@ -32,5 +32,6 @@ sudo swapon --show
  #Run the command below should change the hostname on the terminal
  exec bash
 
+#Run the command below to confirm hostname
  hostname
 ```
