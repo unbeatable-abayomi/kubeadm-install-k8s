@@ -56,3 +56,11 @@ EOF
 # Apply sysctl params without reboot
 sudo sysctl --system
 ```
+
+### Step 4: Next, we have to ensure that we can download and install packages from the internet securely.
+```bash
+# Run the command below on all nodes
+sudo apt-get install -y apt-transport-https ca-certificates curl
+
+sudo mkdir /etc/apt/keyrings
+```
