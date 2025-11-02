@@ -62,5 +62,15 @@ sudo sysctl --system
 # Run the command below on all nodes
 sudo apt-get install -y apt-transport-https ca-certificates curl
 
+# Next, we have to create a directory where we'll store a special key that verifies the authenticity of Kubernetes packages.
 sudo mkdir /etc/apt/keyrings
+```
+### Step 5: Let’s fetch the public key from Google and store it in the folder we created in the previous step
+```bash
+# Run below command on all nodes
+   curl -fsSL https://pkgs.k8s.io/core:/stable:/v1.31/deb/Release.key | sudo gpg --dearmor -o /etc/apt/keyrings/kubernetes-apt-keyring.gpg
+
+sudo chmod 644 /etc/apt/keyrings/kubernetes-apt-keyring.gpg
+
+
 ```
