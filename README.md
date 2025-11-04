@@ -79,3 +79,5 @@ echo "deb [signed-by=/etc/apt/keyrings/kubernetes-apt-keyring.gpg] https://pkgs.
 sudo apt-get update
 
 ```
+
+### Step 6:
