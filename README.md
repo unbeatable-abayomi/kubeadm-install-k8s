@@ -75,7 +75,7 @@ sudo chmod 644 /etc/apt/keyrings/kubernetes-apt-keyring.gpg
 # Next, we need to tell the apt package manager where to find Kubernetes packages for downloading.
 echo "deb [signed-by=/etc/apt/keyrings/kubernetes-apt-keyring.gpg] https://pkgs.k8s.io/core:/stable:/v1.31/deb/ /" | sudo tee /etc/apt/sources.list.d/kubernetes.list
 
-#Next let’s refresh the apt package index to see new items, Run below command
+#Next let’s refresh the apt package index to see new items, Run below command on all nodes
 sudo apt-get update
 
 ```
