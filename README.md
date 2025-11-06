@@ -81,3 +81,7 @@ sudo apt-get update
 ```
 
 ### Step 6:
+```bash
+
+```
+![alt text](image.png)
